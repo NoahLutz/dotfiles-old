@@ -21,3 +21,4 @@ export PATH=$PATH:/home/noah/bin
 
 alias homework="vim ~/documents/lasalle/senior/homework"
 alias bl="xbacklight -set "
+alias packer="packer --noedit "
