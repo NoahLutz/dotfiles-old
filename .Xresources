@@ -1,0 +1,31 @@
+URxvt.scrollBar: false
+
+URxvt.*color0: #456725
+!URxvt.*color1: #456725 
+!URxvt.*color2: #456725
+!URxvt.*color3: #456725
+URxvt.*color4: #5E7C42
+!URxvt.*color5: #456725
+URxvt.*color6: #7D9C60
+!URxvt.*color7: #456725 
+!URxvt.*color8: #456725
+URxvt.*color9: #CFE1BE
+URxvt.*color10: #7D9C60
+!URxvt.*color11: #456725
+URxvt.*color12: #A1BB88
+!URxvt.*color13: #456725
+URxvt.*color14: #CFE1BE
+URxvt.*color15: #CFE1BE
+
+
+!URxvt*.shading: 25
+URxvt*.transparent: true
+URxvt*tintColor: [75]#859774
+
+URxvt*foreground: #DDDDB3
+!URxvt*background: #49593F
+
+!Clickable Links
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/google-chrome-stable
+URxvt.matcher.button: 1

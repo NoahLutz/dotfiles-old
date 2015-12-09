@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while true; do
+	echo B`acpi --battery | cut -d, -f2`
+	sleep 5
+done
