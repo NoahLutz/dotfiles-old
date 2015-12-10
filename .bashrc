@@ -5,7 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls -la --color=auto'
 PS1='[\u@\h \W]\$ '
 
 
@@ -19,6 +18,7 @@ export PATH=$PATH:/home/noah/bin
 
 #aliases
 
+alias ls='ls -lah --color=auto'
 alias homework="vim ~/documents/lasalle/senior/homework"
 alias bl="xbacklight -set "
 alias packer="packer --noedit "
