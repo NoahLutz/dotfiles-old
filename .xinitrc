@@ -67,5 +67,4 @@ sxhkd &
 xbacklight -set 15 &
 panel &
 connman-gtk &
-#bar_runner &
 exec bspwm -c /home/noah/.config/bspwm/bspwmrc
