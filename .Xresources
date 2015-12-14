@@ -1,31 +1,42 @@
 URxvt.scrollBar: false
 
-URxvt.*color0: #456725
-!URxvt.*color1: #456725 
-!URxvt.*color2: #456725
-!URxvt.*color3: #456725
-URxvt.*color4: #5E7C42
-!URxvt.*color5: #456725
-URxvt.*color6: #7D9C60
-!URxvt.*color7: #456725 
-!URxvt.*color8: #456725
-URxvt.*color9: #CFE1BE
-URxvt.*color10: #7D9C60
-!URxvt.*color11: #456725
-URxvt.*color12: #A1BB88
-!URxvt.*color13: #456725
-URxvt.*color14: #CFE1BE
-URxvt.*color15: #CFE1BE
+URxvt*color0: #200e17
+URxvt*color1: #a0557b
+URxvt*color2: #a05e78
+URxvt*color3: #a06173
+URxvt*color4: #a06470
+URxvt*color5: #a06166
+URxvt*color6: #a06c73
+URxvt*color7: #a06e6e
+URxvt*color8: #855e5c
+URxvt*color9: #c8948a
+URxvt*color10: #c88675
+URxvt*color11: #c89988
+URxvt*color12: #c8947d
+URxvt*color13: #c8997a
+URxvt*color14: #d4a87f
+URxvt*color15: #e0b885
 
 
 !URxvt*.shading: 25
-URxvt*.transparent: true
-URxvt*tintColor: [75]#859774
+!URxvt*.transparent: true
+!URxvt*tintColor: [75]#5e3944
 
 URxvt*foreground: #DDDDB3
-!URxvt*background: #49593F
+URxvt*background: #3b1b2d
+
+!Border
+URxvt*externalBorder: 0
+URxvt*borderColor: #855e5c
+
 
 !Clickable Links
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/google-chrome-stable
 URxvt.matcher.button: 1
+
+!Copy paste
+!URxvt.perl-ext-common: default,clipboard
+URxvt.iso14755: False
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
