@@ -12,6 +12,14 @@ while read -r line ; do
 			#battery output
 			battery="%{F$COLOR_STATUS_FG}%{B$COLOR_STATUS_BG} ${line#?} %{B-}%{F-}"
 			;;
+		V*)
+			#Volume Level
+			volume_level="%{F$COLOR_STATUS_FG}%{B$COLOR_STATUS_BG} ${line#?} %{B-}%{F-}"
+			;;
+		M*)
+			#Mute Check
+			muted="%{F$COLOR_STATUS_FG}%{B$COLOR_STATUS_BG} ${line#?} %{B-}%{F-}"
+			;;	
 		S*)
 			# clock output
 			sys_infos="%{F$COLOR_STATUS_FG}%{B$COLOR_STATUS_BG} ${line#?} %{B-}%{F-}"
@@ -74,5 +82,5 @@ while read -r line ; do
 			done
 			;;
 	esac
-	printf "%s\n" "%{l}${wm_infos}%{c}${title}%{r}${battery}${sys_infos}"
+	printf "%s\n" "%{l}${wm_infos}%{c}${title}%{r}${volume_level}${muted}${battery}${sys_infos}"
 done
