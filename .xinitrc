@@ -64,6 +64,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 feh --bg-scale ~/.single_tree_wallpaper.jpg &
 sxhkd &
+xbindkeys &
 xbacklight -set 15 &
 panel &
 connman-gtk &
