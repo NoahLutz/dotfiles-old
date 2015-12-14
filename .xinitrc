@@ -62,7 +62,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 
 
-feh --bg-scale ~/.single_tree_wallpaper.jpg &
+feh --bg-scale ~/.blury_mountains.jpg &
+xss-lock -- i3lock -f &
 sxhkd &
 xbindkeys &
 xbacklight -set 15 &
