@@ -66,6 +66,7 @@ feh --bg-scale ~/.blury_mountains.jpg &
 xss-lock -- i3lock -f &
 sxhkd &
 xbindkeys &
+compton -b &
 xbacklight -set 15 &
 panel &
 connman-gtk &
