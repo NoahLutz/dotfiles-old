@@ -67,7 +67,7 @@ xss-lock -- i3lock -f &
 sxhkd &
 xbindkeys &
 compton -b &
-xbacklight -set 15 &
 panel &
 connman-gtk &
+google-chrome-stable &
 exec bspwm -c /home/noah/.config/bspwm/bspwmrc
