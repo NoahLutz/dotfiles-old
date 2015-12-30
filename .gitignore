@@ -1,0 +1,11 @@
+*
+!.gitignore
+!.Xresources
+!.bashrc
+!.blury_mountains.jpg
+!.single_tree_wallpaper.jpg
+!.vimrc
+!.xbindkeysrc
+!.xinitrc
+!.config/
+!bin/
