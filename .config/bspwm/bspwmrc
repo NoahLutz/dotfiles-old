@@ -10,18 +10,17 @@ bspc config borderless_monocle  true
 bspc config gapless_monocle     true
 bspc config focus_by_distance   true
 
-bspc config auto-cancel		true
+#bspc config auto-cancel		true
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-bspc rule -a google-chrome desktop=^1 state=floating private=on 
-bspc rule -a urxvt state=floating
-bspc rule -a libreoffice floating=on private=on
-bspc rule -a Display state=floating
-bspc rule -a connman-gtk state=floating private=on desktop=^5
-bspc rule -a jetbrains-idea-ce state=floating private=on desktop=^3
+bspc rule -a google-chrome:google-chrome desktop=^1 state=floating private=on 
+bspc rule -a URxvt:urxvt state=floating
+bspc rule -a libreoffice state=floating private=on
+bspc rule -a Connman-gtk state=floating private=on desktop=^5
+bspc rule -a jetbrains-idea-ce:sun-awt-X11-XFramePeer state=floating private=on desktop=^3
 bspc rule -a jetbrains-studio state=floating private=on desktop=^4
 bspc rule -a sublime_text state=floating private=on desktop=^3
 bspc rule -a GParted state=floating private=on
-bspc rule -a transmission-gtk state=floating private=on desktop=^6
-bspc rule -a agave state=floating private=on desktop desktop=^3
+bspc rule -a Transmission-gtk state=floating private=on desktop=^6
+bspc rule -a Agave state=floating private=on desktop desktop=^3
