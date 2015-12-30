@@ -22,3 +22,4 @@ alias ls='ls -lah --color=auto'
 alias homework="vim ~/documents/lasalle/senior/homework"
 alias bl="xbacklight -set "
 alias packer="packer --noedit "
+alias sleepoff="sudo xset -dpms;sudo xset s off"
