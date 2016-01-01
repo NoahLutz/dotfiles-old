@@ -1,6 +1,6 @@
 #!/bin/bash
 
 while true; do
-	echo BBat: `acpi --battery | cut -d, -f2;cat /sys/class/power_supply/BAT0/status`
+	echo BBat: `acpi --battery | cut -d, -f2;cat /sys/class/power_supply/BAT0/status`"  |"
 	sleep 5
 done
