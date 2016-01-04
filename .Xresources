@@ -39,4 +39,9 @@ URxvt.matcher.button: 1
 !URxvt.perl-ext-common: default,clipboard
 URxvt.iso14755: False
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.Shift-Control-V: perl:clipboard:pasteA
+
+
+!Rofi config
+
+rofi.key-run: SuperL+space

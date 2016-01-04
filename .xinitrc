@@ -68,6 +68,7 @@ sxhkd &
 xbindkeys &
 compton -b &
 panel &
+rofi &
 connman-gtk &
 google-chrome-stable &
 exec bspwm -c /home/noah/.config/bspwm/bspwmrc
