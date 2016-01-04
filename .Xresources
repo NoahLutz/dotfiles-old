@@ -1,29 +1,50 @@
+#define COLOR0 #200e17
+#define COLOR1 #a0557b 
+#define COLOR2 #a05e78
+#define COLOR3 #a06173
+#define COLOR4 #a06470
+#define COLOR5 #a06166
+#define COLOR6 #a06c73
+#define COLOR7 #a06e6e
+#define COLOR8 #855e5c
+#define COLOR9 #c8948a
+#define COLOR10 #c88675
+#define COLOR11 #c89988
+#define COLOR12 #c8947d
+#define COLOR13 #c8997a
+#define COLOR14 #d4a87f
+#define COLOR15 #e0b885
+#define COLORBG #DDDDB3
+#define COLORFG #3b1b2d
+
+
+
 URxvt.scrollBar: false
 
-URxvt*color0: #200e17
-URxvt*color1: #a0557b
-URxvt*color2: #a05e78
-URxvt*color3: #a06173
-URxvt*color4: #a06470
-URxvt*color5: #a06166
-URxvt*color6: #a06c73
-URxvt*color7: #a06e6e
-URxvt*color8: #855e5c
-URxvt*color9: #c8948a
-URxvt*color10: #c88675
-URxvt*color11: #c89988
-URxvt*color12: #c8947d
-URxvt*color13: #c8997a
-URxvt*color14: #d4a87f
-URxvt*color15: #e0b885
+URxvt*color0: COLOR0
+URxvt*color1: COLOR1
+URxvt*color2: COLOR2
+URxvt*color3: COLOR3
+URxvt*color4: COLOR4
+URxvt*color5: COLOR5
+URxvt*color6: COLOR6
+URxvt*color7: COLOR7
+URxvt*color8: COLOR8
+URxvt*color9: COLOR9
+URxvt*color10: COLOR10
+URxvt*color11: COLOR11
+URxvt*color12: COLOR12
+URxvt*color13: COLOR13
+URxvt*color14: COLOR14
+URxvt*color15: COLOR15
 
 
 !URxvt*.shading: 25
 !URxvt*.transparent: true
 !URxvt*tintColor: [75]#5e3944
 
-URxvt*foreground: #DDDDB3
-URxvt*background: #3b1b2d
+URxvt*foreground: COLORBG
+URxvt*background: COLORFG
 
 !Border
 URxvt*externalBorder: 0
