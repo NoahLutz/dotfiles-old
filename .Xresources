@@ -14,9 +14,9 @@
 #define COLOR13 #c8997a
 #define COLOR14 #d4a87f
 #define COLOR15 #e0b885
-#define COLORBG #DDDDB3
-#define COLORFG #3b1b2d
-
+#define COLORBG #3b1b2d 
+#define COLORFG #DDDDB3
+#define COLORBORDER #855e5c
 
 
 URxvt.scrollBar: false
@@ -43,12 +43,12 @@ URxvt*color15: COLOR15
 !URxvt*.transparent: true
 !URxvt*tintColor: [75]#5e3944
 
-URxvt*foreground: COLORBG
-URxvt*background: COLORFG
+URxvt*foreground: COLORFG
+URxvt*background: COLORBG
 
 !Border
 URxvt*externalBorder: 0
-URxvt*borderColor: #855e5c
+URxvt*borderColor: COLORBORDER
 
 
 !Clickable Links
@@ -66,3 +66,6 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:pasteA
 !Rofi config
 
 rofi.key-run: SuperL+space
+rofi.background: COLORBG
+rofi.foreground: COLORFG
+rofi.bordercolor: COLORBORDER
