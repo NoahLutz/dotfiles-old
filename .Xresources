@@ -69,3 +69,6 @@ rofi.key-run: SuperL+space
 rofi.background: COLORBG
 rofi.foreground: COLORFG
 rofi.bordercolor: COLORBORDER
+rofi.highlightbg: COLORFG
+rofi.highlightfg: COLORBG
+rofi.separator-style: solid
