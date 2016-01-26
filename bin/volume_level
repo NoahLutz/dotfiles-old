@@ -1,7 +1,7 @@
 #!/bin/bash
 
 while true; do
-	echo VVol: `awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master)`
+	echo V\|  Vol: `awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master)`
 	echo M`awk -F"[][]" '/dB/ { print $6 }' <(amixer sget Master)`"  |"
 	sleep 2
 done
