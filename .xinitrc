@@ -66,9 +66,9 @@ feh --bg-scale ~/.blury_mountains.jpg &
 xss-lock -- i3lock -f &
 sxhkd &
 xbindkeys &
-compton -b --backend glx --vsync opengl-swc&
+compton -b --backend glx&
 panel &
 rofi &
-wicd-gtk &
+connman-gtk &
 google-chrome-stable &
 exec bspwm -c /home/noah/.config/bspwm/bspwmrc
