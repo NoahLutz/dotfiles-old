@@ -63,7 +63,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 
 feh --bg-scale ~/.blury_mountains.jpg &
-xss-lock -- locker.sh  -f &
+xss-lock -- locker  -f &
 sxhkd &
 xbindkeys &
 compton -b --backend glx&
