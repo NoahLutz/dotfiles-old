@@ -66,6 +66,7 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:pasteA
 !Rofi config
 
 rofi.key-run: SuperL+space
+rofi.key-window: SuperL+Tab
 rofi.background: COLORBG
 rofi.foreground: COLORFG
 rofi.bordercolor: COLORBORDER
