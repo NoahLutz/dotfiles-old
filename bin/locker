@@ -11,10 +11,13 @@ TMP_DIR=/tmp/screenlock
 scrot $TMP_DIR/lockscreen.png
 
 #Makes the image blurry
-convert $TMP_DIR/lockscreen.png -blur 3x3 $TMP_DIR/lockscreen.png
+#convert $TMP_DIR/lockscreen.png -scale 10% -scale 1000% $TMP_DIR/lockscreen.png
+convert $TMP_DIR/lockscreen.png -blur 2x4 $TMP_DIR/lockscreen.png
 
 #Overlays lock image over center and saves it
-composite -gravity center $LOCK_IMAGE $TMP_DIR/lockscreen.png $TMP_DIR/lockscreen.png
+composite -gravity center -matte $LOCK_IMAGE $TMP_DIR/lockscreen.png $TMP_DIR/lockscreen.png
 
 #Runs i3lock with this image
-i3lock -n -i $TMP_DIR/lockscreen.png
+i3lock -n -u -i $TMP_DIR/lockscreen.png
+
+rm /tmp/screenlock/lockscreen.png
