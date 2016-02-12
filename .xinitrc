@@ -69,6 +69,5 @@ xbindkeys &
 compton -b --backend glx&
 panel &
 rofi &
-connman-gtk &
 google-chrome-stable &
 exec bspwm -c /home/noah/.config/bspwm/bspwmrc
