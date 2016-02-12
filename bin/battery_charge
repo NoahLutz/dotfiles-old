@@ -8,24 +8,28 @@ CHARGING='\uf1e6'
 ERORR='\uf00d'
 
 ICON=""
-
+ISCHARGING=false
 
 while true; do
 	BAT=`acpi --battery | cut -d, -f2`
 	STATUS=`cat /sys/class/power_supply/BAT0/status`
 	
 	BAT="${BAT:1}"
-
-	if [[ "$STATUS" == "Charging" && "$ICON" != "$CHARGING" ]]; then
-		ICON=$CHARGING
-	elif [[ "${BAT%?}" -gt 0 && "${BAT%?}" -lt 45 && "$ICON" != "$QUARTER" ]]; then
-		ICON=$QUARTER
-	elif [[ "${BAT%?}" -gt  45 && "${BAT%?}" -lt 65 &&  "$ICON" != "$HALF" ]]; then
-		ICON=$HALF
-	elif [[ "${BAT%?}" -gt 65 && "${BAT%?}" -lt 85 &&  "$ICON" != "$QUARTERFULL"  ]]; then
-		ICON=$QUARTERFULL
-	elif [[ "${BAT%?}" -gt 85 && "${BAT%?}" -lt 101 && "$ICON" != "$FULL" ]]; then
-		ICON=$FULL
+	
+	if [[ "$STATUS" != "Charging" ]]; then
+		if [[ "${BAT%?}" -gt 0 && "${BAT%?}" -lt 45 && "$ICON" != "$QUARTER" ]]; then
+			ICON=$QUARTER
+		elif [[ "${BAT%?}" -gt  45 && "${BAT%?}" -lt 65 &&  "$ICON" != "$HALF" ]]; then
+			ICON=$HALF
+		elif [[ "${BAT%?}" -gt 65 && "${BAT%?}" -lt 85 &&  "$ICON" != "$QUARTERFULL"  ]]; then
+			ICON=$QUARTERFULL
+		elif [[ "${BAT%?}" -gt 85 && "${BAT%?}" -lt 101 && "$ICON" != "$FULL" ]]; then
+			ICON=$FULL
+		fi
+	else
+		if [[ "$ICON" != "$CHARGING" ]]; then
+			ICON=$CHARGING
+		fi
 	fi
 
 	echo -e B"$ICON" "$BAT" \|
