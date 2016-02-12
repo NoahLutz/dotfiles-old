@@ -1,7 +1,23 @@
 #!/bin/bash
 
+#ICON='\uf028'
+
 while true; do
-	echo V\|  Vol: `awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master)`
-	echo M`awk -F"[][]" '/dB/ { print $6 }' <(amixer sget Master)`"  |"
+	VOL=`awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master)`
+	MUTE=`awk -F"[][]" '/dB/ { print $6 }' <(amixer sget Master)`
+	
+	if [ "$MUTE" == "off"  ]; then
+		ICON='\uf026'
+	elif [ "${VOL::-1}" -eq "0" ]; then
+		ICON='\uf026'
+	elif [ "${VOL::-1}" -lt "50" ]; then
+		ICON='\uf027'
+	else
+		ICON='\uf028'
+	fi
+	
+	#echo V\|  Vol: `awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master)`
+	#echo M`awk -F"[][]" '/dB/ { print $6 }' <(amixer sget Master)`"  |"
+	echo -e V\| "$ICON" "$VOL" \|
 	sleep 2
 done
