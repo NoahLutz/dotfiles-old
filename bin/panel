@@ -19,7 +19,7 @@ volume_level > "$PANEL_FIFO" &
 
 . panel_colors
 
-panel_bar < "$PANEL_FIFO" | lemonbar -a 32 -g $PANEL_WIDTH\x$PANEL_HEIGHT+10+10 -f "$PANEL_FONT" -F "$COLOR_DEFAULT_FG" -B "$COLOR_BACKGROUND" | sh &
+panel_bar < "$PANEL_FIFO" | lemonbar -a 32 -g $PANEL_WIDTH\x$PANEL_HEIGHT+10+10 -f "$PANEL_FONT_FAMILY" -f "$PANEL_ICON_FONT" -F "$COLOR_DEFAULT_FG" -B "$COLOR_BACKGROUND" | sh &
 
 wid=$(xdo id -a "$PANEL_WM_NAME")
 tries_left=20
