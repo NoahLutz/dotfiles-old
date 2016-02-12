@@ -1,6 +1,6 @@
 #!/bin/bash
 
 while true; do
-	echo S`date +'%a %b %d %r %Z %Y'`
+	echo S`date +'%b %d %r %Z'`
 	sleep 5
 done
