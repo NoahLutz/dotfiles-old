@@ -16,6 +16,7 @@ xtitle -sf 'T%s' > "$PANEL_FIFO" &
 clock  > "$PANEL_FIFO" &
 battery_charge > "$PANEL_FIFO" &
 volume_level > "$PANEL_FIFO" &
+wireless > "$PANEL_FIFO" &
 
 . panel_colors
 

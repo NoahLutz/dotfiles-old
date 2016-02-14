@@ -1,0 +1,30 @@
+#!/bin/bash
+
+CONNECTED='\uf1eb'
+NOTCONNECTED='\uf00d'
+
+
+
+
+INTERFACE='wlp2s0'
+
+ICON=""
+SSID=""
+
+
+
+while true; do
+	STATUS=$(iw dev $INTERFACE link)
+	
+	if [[ "${STATUS}" == "Not connected."  ]]; then
+		SSID=""
+		ICON=$NOTCONNECTED
+	elif [[ `echo $STATUS | awk '{print $1}'` == 'Connected' ]]; then
+		ICON=$CONNECTED
+		SSID="$(echo $STATUS | awk '{print $7}')"
+	fi
+	
+	echo -e N\| $ICON $SSID
+
+	sleep 5
+done
