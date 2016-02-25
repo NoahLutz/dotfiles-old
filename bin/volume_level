@@ -19,5 +19,5 @@ while true; do
 	#echo V\|  Vol: `awk -F"[][]" '/dB/ { print $2 }' <(amixer sget Master)`
 	#echo M`awk -F"[][]" '/dB/ { print $6 }' <(amixer sget Master)`"  |"
 	echo -e V\| "$ICON" "$VOL" \|
-	sleep 2
+	sleep .5
 done
