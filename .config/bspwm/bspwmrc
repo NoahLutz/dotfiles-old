@@ -31,3 +31,4 @@ bspc rule -a Mainwindow.py state=floating private=on desktop=^4
 bspc rule -a Slack state=floating private=on desktop=^4
 bspc rule -a Toplevel state=floating private=on desktop=^3
 bspc rula -a libreoffice-startcenter state=floating private=on desktop=^3
+bspc rula -a luakit state=floating private=on desktop=^1
