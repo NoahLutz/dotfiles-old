@@ -1,0 +1,11 @@
+#!/bin/bash
+
+dir="$HOME/pictures/screenshots"
+img="scrot-$(date "+%d%b")-$RANDOM.png"
+msg="scrot taken"
+
+#take screenshot
+scrot -q 100 "$img" -e "mv $img $dir"
+
+#notifier
+notifier -e "$msg" 

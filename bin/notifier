@@ -1,0 +1,72 @@
+#!/bin/bash
+
+barname="notifier_"
+sleep=2
+font=$PANEL_FONT_FAMILY
+
+bg="#855e5c"
+#fg="#3b1b2b"
+fg="#ddddb3"
+
+width=200
+height=75
+xoffset=1070
+yoffset=40
+
+echo="none"
+end="..."
+
+while getopts ":w:h:x:y:B:F:n:s:f:e:" opt; do
+	case $opt in
+		w)
+			width="$OPTARG"
+			;;
+		h)
+			height="$OPTARG"
+			;;
+		x)
+			xoffset="$OPTARG"
+			;;
+		y)
+			yoffset="$OPTARG"
+			;;
+		B)
+			bg="$OPTARG"
+			;;
+		F)
+			fg="$OPTARG"
+			;;
+		n)
+			barname="$OPTARG"
+			;;
+		s)
+			sleep="$OPTARG"
+			;;
+		f)
+			font="$OPTARG"
+			;;
+		e)
+			if [ $(txtw "$OPTARG") -gt "$width" ]; then
+				temp=${OPTARG:0:20}
+				echo=$temp$end
+			else
+				echo="$OPTARG"
+			fi
+			;;
+		\?)
+			echo "Unknown option: -$OPTARG" >&2
+			exit 1
+			;;
+		:)
+			echo "Option -$OPTARG requires an argumnet" >&2
+			exit 1
+			;;
+	esac
+done
+
+
+#kill any previously running
+ps -ef | awk -v name="$barname" '$0 ~ name {print $2}' | xargs kill 2>/dev/null
+
+#start bar
+(echo "%{c} $echo %{c}"; sleep $sleep) | lemonbar -d -n "$barname" -g "$width"x"$height"+"$xoffset"+"$yoffset" -B "$bg" -F "$fg"
