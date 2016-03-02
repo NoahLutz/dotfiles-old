@@ -61,13 +61,27 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 #exec xterm -geometry 80x66+0+0 -name login
 
 
-
+#bacground
 feh --bg-scale ~/.blury_mountains.jpg &
+
+#Lockscreen
 xss-lock -- locker  -f &
+
+#keybinds
 sxhkd &
 xbindkeys &
+
+#compton
 compton -b --backend glx&
+
+#start bar
 panel &
+
+#start rofi
 rofi &
+
+#start chrome on boot
 google-chrome-stable &
+
+#start bspwm
 exec bspwm -c /home/noah/.config/bspwm/bspwmrc
