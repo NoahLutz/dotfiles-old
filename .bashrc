@@ -10,7 +10,8 @@ PS1='[\u@\h \W]\$ '
 
 #Path
 
-export PATH=$PATH:/home/noah/bin
+#export PATH=$PATH:/home/noah/bin
+export PATH=$HOME/bin:$PATH
 
 
 #Start X Server
