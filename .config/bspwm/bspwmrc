@@ -30,7 +30,7 @@ bspc rule -a Eclipse state=floating private=on desktop=^3
 bspc rule -a Mainwindow.py state=floating private=on desktop=^4
 bspc rule -a Slack state=floating private=on desktop=^4
 bspc rule -a Toplevel state=floating private=on desktop=^3
-bspc rule -a libreoffice-startcenter state=floating private=on desktop=^3
+bspc rule -a libreoffice-startcenter state=floating private=on desktop=^4
 bspc rule -a luakit state=floating private=on desktop=^1
 bspc rule -a feh state=floating private=on
 bspc rule -a Google\ Play\ Music\ Desktop\ Player state=tiled private=on desktop=^5
