@@ -80,6 +80,9 @@ panel &
 #start rofi
 rofi &
 
+#start dunst
+dunst&
+
 #start chrome on boot
 google-chrome-stable &
 
