@@ -83,6 +83,9 @@ rofi &
 #start dunst
 dunst&
 
+#start redshift
+redshift -c /home/noah/.config/redshift.conf &
+
 #start chrome on boot
 google-chrome-stable &
 
