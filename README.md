@@ -20,6 +20,6 @@ Current Arch Dotfiles
 
 ###TODO
 
-* Finer backlight control?
+* ~~Finer backlight control?~~
 * Fix lag between opening lid after sleep and lockscreen poping up
 * Add music stats to menubar (maybe inteactive buttons for pause/play/volume)
