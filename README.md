@@ -35,7 +35,7 @@ Vim
 * Add music stats to menubar (maybe inteactive buttons for pause/play/volume)
 * ~~Fix reboot lag~~
   * Sort of fixed. Removed udev hook from `/etc/mkinitcpio.conf` and replaced it with systemd hook but still happens occasionally
-  * Also changed the timeout from 90s to 10s so its not as painful
+  * Also changed the timeout from 90s to 5s so its not as painful
 
 [screen1]: pictures/screen1.jpg
 [screen2]: pictures/screen2.jpg
