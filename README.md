@@ -31,6 +31,7 @@ Vim
 
 * ~~Finer backlight control?~~
   * now using intel_backlight instead of acpi_video0
+  * added `acpi_backlight=none` to boot options
 * Fix lag between opening lid after sleep and lockscreen poping up
 * Add music stats to menubar (maybe inteactive buttons for pause/play/volume)
 * ~~Fix reboot lag~~
