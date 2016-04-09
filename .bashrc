@@ -13,10 +13,6 @@ PS1='[\u@\h \W]\$ '
 #export PATH=$PATH:/home/noah/bin
 export PATH=$HOME/bin:$PATH
 
-#GTK themes
-export GTK2_RC_FILES=/usr/share/themes/Arc-Darker/gtk-2.0/gtkrc
-export GTK_THEME=Arc-Darker
-
 
 #Start X Server
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
