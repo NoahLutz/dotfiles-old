@@ -37,7 +37,7 @@ Vim
 * ~~Fix reboot lag~~
   * Sort of fixed. Removed udev hook from `/etc/mkinitcpio.conf` and replaced it with systemd hook but still happens occasionally
   * Also changed the timeout from 90s to 5s so its not as painful
-* set up PIA
+* ~~set up PIA~~
 * Google search in rofi?
 
 [screen1]: pictures/screen1.jpg
