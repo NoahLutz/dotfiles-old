@@ -23,5 +23,5 @@ alias ls='ls -lah --color=auto'
 alias homework="vim ~/documents/lasalle/senior/homework"
 alias packer="packer --noedit "
 alias sleepoff="sudo xset -dpms;sudo xset s off"
-alias vpn_on="sudo systemctl start openvpn@US_New_York_City.service"
-alias vpn_off="sudo systemctl stop openvpn@US_New_York_City.service"
+alias vpn_on="sudo systemctl start openvpn@US_New_York_City.service;notify-send 'Starting VPN'"
+alias vpn_off="sudo systemctl stop openvpn@US_New_York_City.service;notify-send 'Turning off VPN'"
