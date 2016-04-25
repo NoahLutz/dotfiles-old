@@ -39,6 +39,7 @@ Vim
   * Also changed the timeout from 90s to 5s so its not as painful
 * ~~set up PIA~~
 * Google search in rofi?
+* Disable IR reciever
 
 [screen1]: pictures/screen1.jpg
 [screen2]: pictures/screen2.jpg
