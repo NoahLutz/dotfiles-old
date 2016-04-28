@@ -78,9 +78,6 @@ compton -b --backend glx&
 #start bar
 panel &
 
-#start rofi
-rofi &
-
 #start dunst
 dunst&
 

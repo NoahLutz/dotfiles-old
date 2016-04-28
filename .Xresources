@@ -65,11 +65,8 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:pasteA
 
 !Rofi config
 
-rofi.key-run: SuperL+space
-rofi.key-window: SuperL+Tab
-rofi.background: COLORBG
-rofi.foreground: COLORFG
-rofi.bordercolor: COLORBORDER
-rofi.highlightbg: COLORFG
-rofi.highlightfg: COLORBG
+rofi.color-window: COLORBG, COLORBORDER
+rofi.color-normal: COLORBG, COLORFG, COLORBG, COLORFG, COLORBG
+rofi.color-urgent: COLORBG, COLORFG, COLORBG, COLORFG, COLORBG
+rofi.color-active: COLORBG, COLORFG, COLORBG, COLORFG, COLORBG
 rofi.separator-style: solid
