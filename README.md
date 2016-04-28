@@ -42,6 +42,7 @@ Rofi
   * Also changed the timeout from 90s to 5s so its not as painful
 * ~~set up PIA~~
 * Google search in rofi?
+  * checkout custom modi scripts in rofi
 * ~~Disable IR recevier~~
   * Added xorg conf file to `/etc/X11/xord.conf.d/` to ignore IR recevier
 
