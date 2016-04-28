@@ -25,6 +25,9 @@ Screenfetch
 
 Vim
 ![Vim][screen3]
+
+Rofi
+![Rofi][screen4]
 <!--- }}} -->
 
 ###TODO
@@ -44,3 +47,4 @@ Vim
 [screen1]: pictures/screen1.jpg
 [screen2]: pictures/screen2.jpg
 [screen3]: pictures/screen3.jpg
+[screen4]: pictures/rofi.png
