@@ -29,6 +29,10 @@
     m:0x40 + c:49
     Mod4 + grave
 
+"(rofi -modi 'google:/home/noah/bin/google' -show google)"
+    m:0x41 + c:42
+    Shift+Mod4 + g
+
 #"(xbacklight -inc 10)"
 #    m:0x0 + c:233
 #    XF86MonBrightnessUp

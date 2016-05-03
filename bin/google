@@ -1,0 +1,15 @@
+#!/bin/bash
+URL="https://www.google.com/?gws_rd=ssl#q="
+
+if [ -z $@ ]; then
+	echo "Open Google"
+else
+	input=$@
+	if [ "$input" = "Open Google" ]; then
+		xdg-open "$URL" > /dev/null
+	else
+		
+		terms=${input// /+}
+		xdg-open "$URL$terms" > /dev/null
+	fi
+fi

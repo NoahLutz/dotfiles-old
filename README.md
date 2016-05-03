@@ -41,7 +41,10 @@ Rofi
   * Sort of fixed. Removed udev hook from `/etc/mkinitcpio.conf` and replaced it with systemd hook but still happens occasionally
   * Also changed the timeout from 90s to 5s so its not as painful
 * ~~set up PIA~~
-* Google search in rofi?
+* ~~Google search in rofi?~~
+  * Created google script for rofi (`bin/google`)
+  * Added script as modi to rofi and created a keybind
+    * see `.xbindkeysrc` 
   * checkout custom modi scripts in rofi
 * ~~Disable IR recevier~~
   * Added xorg conf file to `/etc/X11/xord.conf.d/` to ignore IR recevier
