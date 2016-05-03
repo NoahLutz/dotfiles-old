@@ -1,14 +1,20 @@
 #!/bin/bash
 URL="https://www.google.com/?gws_rd=ssl#q="
 
+#When rofi executes a script, it first calls it with no argument to populate the list of options 
 if [ -z $@ ]; then
 	echo "Open Google"
 else
+	#Here is the section for when either an option is selected or when the user inputs their own selection
+
+	#Grabs input
 	input=$@
+
+	#if the input equals one of the options above, execute acordingly
 	if [ "$input" = "Open Google" ]; then
 		xdg-open "$URL" > /dev/null
 	else
-		
+		#if it doesn't match and options, then add it as a search term and open it in the defualt browser
 		terms=${input// /+}
 		xdg-open "$URL$terms" > /dev/null
 	fi
