@@ -36,7 +36,9 @@ Rofi
   * now using intel_backlight instead of acpi_video0
   * added `acpi_backlight=none` to boot options
 * Fix lag between opening lid after sleep and lockscreen poping up
-* Add music stats to menubar (maybe inteactive buttons for pause/play/volume)
+* ~~Add music stats to menubar~~ (maybe inteactive buttons for pause/play/volume)
+  * added music tab to lemonbar
+  * interactive buttons/expansion on click?
 * ~~Fix reboot lag~~
   * Sort of fixed. Removed udev hook from `/etc/mkinitcpio.conf` and replaced it with systemd hook but still happens occasionally
   * Also changed the timeout from 90s to 5s so its not as painful

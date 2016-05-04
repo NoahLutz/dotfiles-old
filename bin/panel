@@ -17,6 +17,7 @@ clock  > "$PANEL_FIFO" &
 battery_charge > "$PANEL_FIFO" &
 volume_level > "$PANEL_FIFO" &
 wireless > "$PANEL_FIFO" &
+music > "$PANEL_FIFO" &
 
 . panel_colors
 

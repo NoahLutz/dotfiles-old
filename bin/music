@@ -1,0 +1,22 @@
+#!/bin/bash
+
+ICON="\uf001"
+
+STATUS=""
+
+while true; do
+	PLAYING="$(cat /home/noah/.config/Google\ Play\ Music\ Desktop\ Player/json_store/playback.json | jsawk 'return this.playing')"
+	echo $PLAYING
+
+	if [ "$PLAYING" = "true" ]; then
+		TITLE=`cat /home/noah/.config/Google\ Play\ Music\ Desktop\ Player/json_store/playback.json | jsawk 'return this.song.title'`
+		ARTIST=`cat /home/noah/.config/Google\ Play\ Music\ Desktop\ Player/json_store/playback.json | jsawk 'return this.song.artist'`
+
+		STATUS="$TITLE, $ARTIST"
+	else
+		STATUS="Not Playing"
+	fi
+
+	echo -e G\| $ICON $STATUS \|
+	sleep 5;
+done
