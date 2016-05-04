@@ -47,7 +47,7 @@ Rofi
     * see `.xbindkeysrc` 
   * checkout custom modi scripts in rofi
 * ~~Disable IR recevier~~
-  * Added xorg conf file to `/etc/X11/xord.conf.d/` to ignore IR recevier
+  * Added xorg conf file to `/etc/X11/xorg.conf.d/` to ignore IR recevier
 
 [screen1]: pictures/screen1.jpg
 [screen2]: pictures/screen2.jpg
