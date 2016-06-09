@@ -36,7 +36,8 @@ Rofi
   * now using intel_backlight instead of acpi_video0
   * added `acpi_backlight=none` to boot options
 * Fix lag between opening lid after sleep and lockscreen poping up
-  * try i3lock-fancy (github)
+  * ~~try i3lock-fancy (github)~~
+  * fix xautolock
 * ~~Add music stats to menubar~~ (maybe inteactive buttons for pause/play/volume)
   * added music tab to lemonbar
   * interactive buttons/expansion on click?
@@ -51,9 +52,4 @@ Rofi
   * checkout custom modi scripts in rofi
 * ~~Disable IR recevier~~
   * Added xorg conf file to `/etc/X11/xorg.conf.d/` to ignore IR recevier
-
-
-[screen1]: pictures/screen1.jpg
-[screen2]: pictures/screen2.jpg
-[screen3]: pictures/screen3.jpg
-[screen4]: pictures/rofi.png
+[screen1]: pictures/screen1.jpg [screen2]: pictures/screen2.jpg [screen3]: pictures/screen3.jpg [screen4]: pictures/rofi.png
