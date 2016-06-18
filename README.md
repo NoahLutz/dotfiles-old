@@ -35,9 +35,9 @@ Rofi
 * ~~Finer backlight control?~~
   * now using intel_backlight instead of acpi_video0
   * added `acpi_backlight=none` to boot options
-* Fix lag between opening lid after sleep and lockscreen poping up
+* ~~Fix lag between opening lid after sleep and lockscreen poping up~~
   * ~~try i3lock-fancy (github)~~
-  * fix xautolock
+  * now using xautolock. See [.xinitrc](.xinitrc)
 * ~~Add music stats to menubar~~ (maybe inteactive buttons for pause/play/volume)
   * added music tab to lemonbar
   * interactive buttons/expansion on click?
