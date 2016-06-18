@@ -52,4 +52,7 @@ Rofi
   * checkout custom modi scripts in rofi
 * ~~Disable IR recevier~~
   * Added xorg conf file to `/etc/X11/xorg.conf.d/` to ignore IR recevier
-[screen1]: pictures/screen1.jpg [screen2]: pictures/screen2.jpg [screen3]: pictures/screen3.jpg [screen4]: pictures/rofi.png
+[screen1]: pictures/screen1.jpg
+[screen2]: pictures/screen2.jpg
+[screen3]: pictures/screen3.jpg 
+[screen4]: pictures/rofi.png
