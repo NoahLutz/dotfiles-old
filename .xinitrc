@@ -66,7 +66,8 @@ export GTK2_RC_FILES=/usr/share/themes/Arc-Darker/gtk-2.0/gtkrc
 feh --bg-scale ~/.blury_mountains.jpg &
 
 #Lockscreen
-xss-lock -- locker  -f &
+#xss-lock -- i3lock-fancy &
+xautolock -locker i3lock-fancy &
 
 #keybinds
 sxhkd &
