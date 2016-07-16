@@ -20,6 +20,7 @@ export PATH=$HOME/bin:$PATH
 #aliases
 
 alias ls='ls -lah --color=auto'
+alias lsn='ls -lah --color=no'
 alias homework="vim ~/documents/lasalle/senior/homework"
 alias packer="packer --noedit "
 alias sleepoff="sudo xset -dpms;sudo xset s off"
