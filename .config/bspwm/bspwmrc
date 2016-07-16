@@ -18,7 +18,7 @@ bspc rule -a google-chrome:google-chrome desktop=^1 state=floating private=on
 bspc rule -a URxvt:urxvt state=floating
 bspc rule -a libreoffice state=floating private=on
 bspc rule -a Connman-gtk state=floating private=on desktop=^5
-bspc rule -a jetbrains-idea-ce:sun-awt-X11-XFramePeer state=floating private=on desktop=^3
+bspc rule -a jetbrains-idea state=floating private=on desktop=^3
 bspc rule -a jetbrains-studio state=floating private=on desktop=^4
 bspc rule -a sublime_text state=floating private=on desktop=^3
 bspc rule -a GParted state=floating private=on
@@ -35,3 +35,4 @@ bspc rule -a luakit state=floating private=on desktop=^1
 bspc rule -a feh state=floating private=on
 bspc rule -a Google\ Play\ Music\ Desktop\ Player state=tiled private=on desktop=^5
 bspc rule -a com-noah-stickynotes-StickyNotes state=floating private=on
+bspc rule -a Keepassx2 state=floating private=on desktop=^3
