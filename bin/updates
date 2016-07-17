@@ -1,0 +1,14 @@
+#!/bin/bash
+
+ICON='\uf019'
+
+while true; do
+
+    COUNT=$(checkupdates | wc -l)
+
+    echo -e C$ICON $COUNT \|
+
+    sleep 10
+
+done
+
