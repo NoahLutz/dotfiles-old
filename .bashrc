@@ -28,4 +28,4 @@ alias pia_on="sudo systemctl start openvpn@US_New_York_City.service;notify-send 
 alias pia_off="sudo systemctl stop openvpn@US_New_York_City.service;notify-send 'Ending VPN - PIA'"
 alias hvpn_on="sudo systemctl start openvpn@home;notify-send 'Starting VPN - Home'"
 alias hvpn_off="sudo systemctl stop openvpn@home.service;notify-send 'Ending VPN - Home'"
-alias vpn_staus="sudo systemctl status openvpn@*"
+alias vpn_status="sudo systemctl status openvpn@*"
