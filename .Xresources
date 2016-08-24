@@ -1,22 +1,22 @@
-#define COLOR0 #200e17
-#define COLOR1 #a0557b 
-#define COLOR2 #a05e78
-#define COLOR3 #a06173
-#define COLOR4 #a06470
-#define COLOR5 #a06166
-#define COLOR6 #a06c73
-#define COLOR7 #a06e6e
-#define COLOR8 #855e5c
-#define COLOR9 #c8948a
-#define COLOR10 #c88675
-#define COLOR11 #c89988
-#define COLOR12 #c8947d
-#define COLOR13 #c8997a
-#define COLOR14 #d4a87f
-#define COLOR15 #e0b885
-#define COLORBG #3b1b2d 
-#define COLORFG #DDDDB3
-#define COLORBORDER #855e5c
+#define COLOR0 #201e1d
+#define COLOR1 #a05c55
+#define COLOR2 #a0473c
+#define COLOR3 #6f9ea0
+#define COLOR4 #bd4938
+#define COLOR5 #df6038
+#define COLOR6 #6b9da0
+#define COLOR7 #5a8ecd
+#define COLOR8 #c0815b
+#define COLOR9 #a4bfc8
+#define COLOR10 #92aadf
+#define COLOR11 #b5c1d2
+#define COLOR12 #a0b4e0
+#define COLOR13 #b0c0e0
+#define COLOR14 #bfcce0
+#define COLOR15 #ced5e0
+#define COLORBG #425D5E 
+#define COLORFG #95ADB5
+#define COLORBORDER #544F4E
 
 
 URxvt.scrollBar: false
