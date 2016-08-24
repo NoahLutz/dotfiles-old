@@ -63,7 +63,7 @@ export GTK2_RC_FILES=/usr/share/themes/Arc-Darker/gtk-2.0/gtkrc
 
 
 #bacground
-feh --bg-scale ~/.blury_mountains.jpg &
+feh --bg-scale ~/.oregon_coast.jpg &
 
 #Lockscreen
 #xss-lock -- i3lock-fancy &
@@ -87,6 +87,9 @@ redshift -c /home/noah/.config/redshift.conf &
 
 #start chrome on boot
 google-chrome-stable &
+
+#mount google drive
+gdfs -o umask=007,uid=`id -u`,gid=`id -g` /home/noah/.gdrive/gdfs.creds /mnt/noah/gdrive &
 
 #start bspwm
 exec bspwm -c /home/noah/.config/bspwm/bspwmrc
