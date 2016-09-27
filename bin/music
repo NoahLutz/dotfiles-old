@@ -9,8 +9,8 @@ while true; do
 	echo $PLAYING
 
 	if [ "$PLAYING" = "true" ]; then
-		TITLE=`cat /home/noah/.config/Google\ Play\ Music\ Desktop\ Player/json_store/playback.json | jsawk 'return this.song.title'`
-		ARTIST=`cat /home/noah/.config/Google\ Play\ Music\ Desktop\ Player/json_store/playback.json | jsawk 'return this.song.artist'`
+		TITLE=`cat /home/noah/.config/Google\ Play\ Music\ Desktop\ Player/json_store/playback.json | jsawk 'return this.song.title' | cut -c 1-20`
+		ARTIST=`cat /home/noah/.config/Google\ Play\ Music\ Desktop\ Player/json_store/playback.json | jsawk 'return this.song.artist' | cut -c 1-20`
 
 		STATUS="$TITLE, $ARTIST"
 	else
