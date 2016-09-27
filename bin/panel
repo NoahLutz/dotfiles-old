@@ -1,5 +1,9 @@
 #! /bin/sh
 
+sleep 2
+
+export PATH=$HOME/bin:$PATH
+
 if xdo id -a "$PANEL_WM_NAME" > /dev/null ; then
 	printf "%s\n" "The panel is already running." >&2
 	exit 1
@@ -10,7 +14,7 @@ trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
 
-bspc config top_padding 34
+#bspc config top_padding 34
 bspc subscribe report > "$PANEL_FIFO" &
 xtitle -t 50 -sf 'T%s' > "$PANEL_FIFO" &
 clock  > "$PANEL_FIFO" &
@@ -22,7 +26,7 @@ updates > "$PANEL_FIFO" &
 
 . panel_colors
 
-panel_bar < "$PANEL_FIFO" | lemonbar -a 32 -g $PANEL_WIDTH\x$PANEL_HEIGHT+10+10 -f "$PANEL_FONT_FAMILY" -f "$PANEL_ICON_FONT" -F "$COLOR_DEFAULT_FG" -B "$COLOR_BACKGROUND" | sh &
+panel_bar < "$PANEL_FIFO" | lemonbar -d -a 32 -g $PANEL_WIDTH\x$PANEL_HEIGHT+10+10 -f "$PANEL_FONT_FAMILY" -f "$PANEL_ICON_FONT" -F "$COLOR_DEFAULT_FG" -B "$COLOR_BACKGROUND" | sh &
 
 wid=$(xdo id -a "$PANEL_WM_NAME")
 tries_left=20
