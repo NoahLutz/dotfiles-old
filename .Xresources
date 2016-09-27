@@ -1,55 +1,33 @@
-#define COLOR0 #201e1d
-#define COLOR1 #a05c55
-#define COLOR2 #a0473c
-#define COLOR3 #6f9ea0
-#define COLOR4 #bd4938
-#define COLOR5 #df6038
-#define COLOR6 #6b9da0
-#define COLOR7 #5a8ecd
-#define COLOR8 #c0815b
-#define COLOR9 #a4bfc8
-#define COLOR10 #92aadf
-#define COLOR11 #b5c1d2
-#define COLOR12 #a0b4e0
-#define COLOR13 #b0c0e0
-#define COLOR14 #bfcce0
-#define COLOR15 #ced5e0
-#define COLORBG #425D5E 
-#define COLORFG #95ADB5
-#define COLORBORDER #544F4E
 
+!Main color scheme
+
+#define COLORBG #323639
+#define COLORFG #8E8B86
+
+*color0: #202426
+*color1: #555A5E
+*color2: #64605D
+*color3: #6A5456
+*color4: #2E313A
+*color5: #494546
+*color6: #46495C
+*color7: #583A38
+*color8: #323639
+*color9: #748080
+*color10: #7A7677
+*color11: #A38583
+*color12: #9E7549
+*color13: #55585D
+*color14: #676C7F
+*color15: #845948
+
+
+
+!URxvt specific settings
 
 URxvt.scrollBar: false
-
-URxvt*color0: COLOR0
-URxvt*color1: COLOR1
-URxvt*color2: COLOR2
-URxvt*color3: COLOR3
-URxvt*color4: COLOR4
-URxvt*color5: COLOR5
-URxvt*color6: COLOR6
-URxvt*color7: COLOR7
-URxvt*color8: COLOR8
-URxvt*color9: COLOR9
-URxvt*color10: COLOR10
-URxvt*color11: COLOR11
-URxvt*color12: COLOR12
-URxvt*color13: COLOR13
-URxvt*color14: COLOR14
-URxvt*color15: COLOR15
-
-
-!URxvt*.shading: 25
-!URxvt*.transparent: true
-!URxvt*tintColor: [75]#5e3944
-
 URxvt*foreground: COLORFG
 URxvt*background: COLORBG
-
-!Border
-URxvt*externalBorder: 0
-URxvt*borderColor: COLORBORDER
-
 
 !Clickable Links
 URxvt.perl-ext-common: default,matcher
@@ -57,14 +35,12 @@ URxvt.url-launcher: /usr/bin/google-chrome-stable
 URxvt.matcher.button: 1
 
 !Copy paste
-!URxvt.perl-ext-common: default,clipboard
 URxvt.iso14755: False
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
-URxvt.keysym.Shift-Control-V: perl:clipboard:pasteA
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 
 
 !Rofi config
-
 rofi.color-window: COLORBG, COLORBORDER
 rofi.color-normal: COLORBG, COLORFG, COLORBG, COLORFG, COLORBG
 rofi.color-urgent: COLORBG, COLORFG, COLORBG, COLORFG, COLORBG
