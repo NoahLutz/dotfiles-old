@@ -2,6 +2,7 @@
 
 CONNECTED='\uf1eb'
 NOTCONNECTED='\uf00d'
+VPN_CONN='\uf084'
 INTERFACE='wlp2s0'
 
 ICON=""
@@ -16,6 +17,10 @@ while true; do
 	elif [[ `echo $STATUS | awk '{print $1}'` == 'Connected' ]]; then
 		ICON=$CONNECTED
 		SSID="$(echo $STATUS | awk '{print $7}')"
+
+                if [[ `systemctl status openvpn@* | grep Active` == *"active"*  ]]; then
+                    ICON=$VPN_CONN
+                fi
 	fi
 	
 	echo -e N\| $ICON $SSID
