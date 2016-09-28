@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm -r /home/$1/.trash
+mkdir /home/$1/.trash
