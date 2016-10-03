@@ -40,10 +40,6 @@ export PATH=$HOME/bin:$PATH
 #background
 feh --bg-scale ~/.waves.jpg &
 
-#Lockscreen
-xss-lock -- i3lock-fancy &
-xautolock -locker i3lock-fancy &
-
 #keybinds
 sxhkd &
 xbindkeys &
@@ -62,9 +58,6 @@ redshift -c /home/noah/.config/redshift.conf &
 
 #start chrome on boot
 google-chrome-stable &
-
-#mount google drive
-gdfs -o umask=007,uid=`id -u`,gid=`id -g` /home/noah/.gdrive/gdfs.creds /mnt/noah/gdrive &
 
 #start bspwm
 exec bspwm -c /home/noah/.config/bspwm/bspwmrc
