@@ -17,17 +17,20 @@ Current Arch Dotfiles
 * Browser: `chrome`
 
 
-Clean
-![Clean][screen1]
-
 Screenfetch
-![Screenfetch][screen2]
+![Screenfetch][screenfetch]
 
-Vim
-![Vim][screen3]
+Clean
+![Clean][clean]
+
+Browser
+![Browser][browser]
+
+Fake Dirty
+![Fake Dirty][fake_dirty]
 
 Rofi
-![Rofi][screen4]
+![Rofi][screenRofi]
 <!--- }}} -->
 
 ###TODO
@@ -52,7 +55,8 @@ Rofi
   * checkout custom modi scripts in rofi
 * ~~Disable IR recevier~~
   * Added xorg conf file to `/etc/X11/xorg.conf.d/` to ignore IR recevier
-[screen1]: pictures/screen1.jpg
-[screen2]: pictures/screen2.jpg
-[screen3]: pictures/screen3.jpg 
-[screen4]: pictures/rofi.png
+[screenfetch]: pictures/screenfetch.jpg
+[browser]: pictures/browser.jpg
+[fake_dirty]: pictures/fake_dirty.jpg 
+[screenRofi]: pictures/rofi.png
+[clean]: pictures/clean.jpg
