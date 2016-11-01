@@ -15,7 +15,7 @@ bspc config focus_by_distance   true
 
 bspc monitor -d I II III IV V VI 
 
-bspc rule -a google-chrome:* desktop=^1 state=floating private=on 
+bspc rule -a Google-chrome desktop=^1 state=floating private=on 
 bspc rule -a URxvt:urxvt state=floating
 bspc rule -a libreoffice state=floating private=on
 bspc rule -a Connman-gtk state=floating private=on desktop=^5
