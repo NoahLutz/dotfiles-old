@@ -39,7 +39,7 @@ export GTK2_RC_FILES=/usr/share/themes/Arc-Darker/gtk-2.0/gtkrc
 export PATH=$HOME/bin:$PATH
 
 #background
-feh --bg-scale ~/.solarized.png &
+feh --bg-scale ~/.code.jpg &
 
 #keybinds
 sxhkd &
