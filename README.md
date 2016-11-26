@@ -11,10 +11,9 @@ Current Arch Dotfiles
 * Launcher: `rofi`
 * Terminal Emulator: `urxvt`
 * Shell: `bash`
-* Terminal Font: `Terminus`
-* File Manager: `ranger`
+* Terminal Font: `Terminus TTF`
 * Text Editor: `vim`
-* Browser: `chrome`
+* Browser: `google-chrome-stable`
 
 
 Screenfetch
