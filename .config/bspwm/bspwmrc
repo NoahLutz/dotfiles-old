@@ -11,9 +11,7 @@ bspc config borderless_monocle  true
 bspc config gapless_monocle     true
 bspc config focus_by_distance   true
 
-#bspc config auto-cancel		true
-
-bspc monitor -d I II III IV V VI 
+bspc monitor -d `echo -e '\uf1a0 \uf120 \uf121 \uf040 \uf025 \uf1f9'`
 
 bspc rule -a Google-chrome desktop=^1 state=floating private=on 
 bspc rule -a URxvt:urxvt state=floating
@@ -41,3 +39,4 @@ bspc rule -a Remmina state=floating private=on desktop=^5
 bspc rule -a jetbrains-pycharm state=floating private=on desktop=^3
 bspc rule -a Tk state=floating private=on
 bspc rule -a VirtualBox state=floating private=on desktop=^6
+bspc rule -a Vlc state=tiling private=on desktop=^5
