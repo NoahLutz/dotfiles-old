@@ -8,6 +8,7 @@ Current Arch Dotfiles
 * Linux Distro: `arch`
 * Window Manager: `bspwm`
 * Bar: `lemonbar`
+* Bar Font: `Terminus TTF/FontAwesome`
 * Launcher: `rofi`
 * Terminal Emulator: `urxvt`
 * Shell: `bash`
