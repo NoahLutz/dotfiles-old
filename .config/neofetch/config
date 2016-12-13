@@ -235,7 +235,7 @@ color_blocks="on"
 
 # Color block width in spaces
 # --block_width num
-block_width=6
+block_width=7
 
 # Color block height in lines
 # --block_height num
@@ -289,7 +289,7 @@ disk_display="off"
 
 # Image Source
 # --image wall, ascii, /path/to/img, /path/to/dir/, off
-image="/home/noah/Downloads/f_society2.png"
+image="$HOME/pictures/f_society2.png"
 
 # Thumbnail directory
 thumbnail_dir="$HOME/.cache/thumbnails/neofetch"
