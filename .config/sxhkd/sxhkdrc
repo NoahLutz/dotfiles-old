@@ -3,7 +3,7 @@
 #
 
 # terminal emulator
-super + Return
+alt + Return
 	urxvt
 
 # program launcher
@@ -76,8 +76,6 @@ super + bracket{left,right}
 
 # focus the older or newer node in the focus history
 super + {o,i}
-#bspc config top_padding 34
-#bspc config top_padding 34
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
