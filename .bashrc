@@ -13,7 +13,6 @@ PS1='[\u@\h \W]\$ '
 #export PATH=$PATH:/home/noah/bin
 export PATH=$HOME/bin:$PATH
 
-
 #Start X Server
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 
