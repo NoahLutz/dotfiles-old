@@ -18,28 +18,28 @@
 
 #Rofi Keybinds
 "(rofi -show run)"
-    m:0x40 + c:65
-    Mod4 + space
+    m:0x8 + c:65
+    Alt + space
 
 "(rofi -show window)"
-    m:0x40 + c:23
-    Mod4 + Tab
+    m:0x8 + c:23
+    Alt + Tab
 
 "(rofi -show windowCD)"
-    m:0x40 + c:49
-    Mod4 + grave
+    m:0x8 + c:49
+    Alt + grave
 
 "(rofi -modi 'google:/home/noah/bin/google' -show google)"
-    m:0x41 + c:42
-    Shift+Mod4 + g
+    m:0x9 + c:42
+    Shift+Alt + g
 
-#"(xbacklight -inc 10)"
-#    m:0x0 + c:233
-#    XF86MonBrightnessUp
+"(xbacklight -inc 10)"
+    m:0x0 + c:233
+    XF86MonBrightnessUp
 
-#"(xbacklight -dec 10)"
-#    m:0x0 + c:232
-#    XF86MonBrightnessDown
+"(xbacklight -dec 10)"
+    m:0x0 + c:232
+    XF86MonBrightnessDown
 
 ##################################
 # End of xbindkeys configuration #
