@@ -49,7 +49,7 @@ xbindkeys &
 compton -b --backend glx&
 
 #start bar
-panel &
+#panel &
 
 #start dunst
 dunst&
