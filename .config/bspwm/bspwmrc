@@ -2,6 +2,10 @@
 
 sxhkd &
 polybar workspace &
+polybar topdate &
+polybar bat_bright_vol&
+polybar wireless&
+polybar checkupdates&
 
 bspc config border_width        0
 bspc config window_gap         20
