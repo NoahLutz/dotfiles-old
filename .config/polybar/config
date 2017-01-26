@@ -200,7 +200,7 @@ label-disconnected = disconnected
 type = custom/script
 label = UPD| %output%
 exec = checkupdates | wc -l
-interval = 500
+interval = 10
 
 
 ; vim:ft=dosini
