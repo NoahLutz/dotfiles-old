@@ -5,6 +5,10 @@ foreground = #c3af97
 primary = #536b6e
 secondary = #59405e
 alert = #6b4657
+highlight = #d0dad8
+
+[fonts]
+primary = -*-tewi-medium-*-*-*-12-*-*-*-*-*-*-*
 
 [global/wm]
 margin-top = 1
@@ -15,72 +19,77 @@ monitor = ${env:MONITOR:eDP1}
 bottom = true
 width = 100%
 height = 7 
-offset-x =0 
+offset-x = 0
 offset-y = 12 
+wm-restack = bspwm
 
 background = ${colors.transparent}
 foreground = ${colors.transparent}
 
-spacing = 1
-
-font-0 = fixed:pixelsize=10;0
-font-1 = unifont:size=6:heavy:fontformat=truetype;-2
-font-2 = siji:pixelsize=10;0
+font-0 = ${fonts.primary}
 
 modules-center = bspwm
 
+[bar/topdate]
+monitor = ${env:MONITOR:eDP1}
+width = 190
+height = 30
+offset-x = 1710
+offset-y = 12
 
-[bar/toptime]
-monitor=${env:MONITOR:eDP1}
-width = 100
-height = 25
-offset-x = 93%
-offset-y = 7 
+wm-restack = bspwm
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = fixed:pixelsize=12;0
-font-1 = unifont:size=6:heavy:fontformat=truetype;-2
-font-2 = siji:pixelsize=10;0
+font-0 = ${fonts.primary}
 
-modules-center = time
+modules-center = date
 
-[bar/topdate]
+[bar/bat_bright_vol]
 monitor = ${env:MONITOR:eDP1}
+width = 250
+height = 30
+offset-x = 1450
+offset-y = 12
+
+wm-restack = bspwm
+
+module-margin = 1
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = ${fonts.primary}
+
+modules-center = volume backlight battery
+
+[bar/wireless]
+monitor = ${env:MONITOR:eDP1}
+width = 150
+height = 30
+offset-x = 1290
+offset-y = 12
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = ${fonts.primary}
+modules-center = network
 
 
+[bar/checkupdates]
+monitor = ${env:MONITOR:eDP1}
+width = 75
+height = 30
+offset-x = 1205
+offset-y = 12
 
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
+background = ${colors.background}
+foreground = ${colors.foreground}
 
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-underline = ${colors.secondary}
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-
-label-layout = %layout%
-
-label-indicator-padding = 2
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
-
-[module/filesystem]
-type = internal/fs
-interval = 25
-
-mount-0 = /
-mount-1 = /home
-mount-2 = /invalid/mountpoint
-
-label-mounted = %mountpoint%: %percentage_free%
-
-label-unmounted = %mountpoint%: not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
+font-0 = ${fonts.primary}
+modules-center = checkupdates
 
 [module/bspwm]
 type = internal/bspwm
@@ -93,191 +102,66 @@ enable-scroll = false
 
 format = <label-state>
 
-label-focused = %index%
+label-focused-foreground = ${colors.transparent}
 label-focused-background = ${colors.foreground}
 label-focused-underline= ${colors.transparent}
 label-focused-padding = 20
 
-label-occupied = %index%
 label-occupied-padding = 20
+label-occupied-foreground = ${colors.transparent}
 label-occupied-background = ${colors.primary}
 label-occupied-underline = ${colors.transparent}
 
-label-urgent = %index%!
+label-urgent-foreground = ${colors.transparent}
 label-urgent-background = ${colors.alert}
 label-urgent-underline = ${colors.transparent}
 label-urgent-padding = 20
 
-label-empty = %index%
+label-empty-foreground = ${colors.transparent}
 label-empty-background = ${colors.secondary}
 label-empyty-underline = ${colors.transparent}
 label-empty-padding = 20
 
-[module/mpd]
-type = internal/mpd
-
-format-online = <label-song>  <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-random>
-
-label-song-maxlen = 25
-label-song-ellipsis = true
-
-icon-prev = 
-icon-seekb = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
-icon-seekf = 
-
-icon-random = 
-icon-repeat = 
-
-toggle-on-foreground = ${colors.primary}
-toggle-off-foreground = #66
-
 [module/backlight]
 type = internal/xbacklight
-
-format = <label> <bar>
-label = BL
-
-bar-width = 10
-bar-indicator = │
-bar-indicator-foreground = #ff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
-
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
-label = %percentage%
-
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
-label = %percentage_used%
-
-[module/wlan]
-type = internal/network
-interface = 
-interval = 3.0
-
-format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
-format-disconnected-underline = ${self.format-connected-underline}
-
-label-connected = %essid%
-label-disconnected = %ifname% disconnected
-label-disconnected-foreground = ${colors.foreground-alt}
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
+format = <label>
+label = BRT| %percentage%%
+card = intel_backlight
 
 [module/time]
 type = internal/date
 interval = 5
-
-;date = %m-%d-%Y
-;date-alt = " %Y-%m-%d"
-
 time = %I:%M %p
 time-alt = %H:%M:%S
+format-prefix-foreground = ${colors.foreground}
+label = %time%
 
-;format-prefix = 
+[module/date]
+type=internal/date
+interval = 5
+date = %b %d %r %Z
 format-prefix-foreground = ${colors.foreground}
 format-underline = ${colors.transparent}
-
-label = %date% %time%
+label = %date%
 
 [module/volume]
 type = internal/volume
-
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
-label-volume-foreground = ${root.foreground}
-
-format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = │
-bar-volume-indicator-font = 2
-bar-volume-indicator-foreground = #ff
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+master-mixer = Master
+format-volume = <label-volume>
+label-volume = VOL| %percentage%%
+label-muted = VOL| mute
 
 [module/battery]
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 98
-
-format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
-
-format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
-
-format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
-
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
-
-format = <ramp> <label>
-format-underline = #f50a4d
-format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
-
-label = %temperature%
-label-warn = %temperature%
-label-warn-foreground = ${colors.secondary}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
+full-at = 99
+label-charging = BAT+| %percentage%%
+label-discharging = BAT-| %percentage%%
+label-full = BAT| %percentage%%
+poll-interval = 5
+format-charging = <label-charging>
+format-discharging = <label-discharging>
 
 [module/powermenu]
 type = custom/menu
@@ -303,5 +187,20 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/network]
+type=internal/network
+interface = wlp2s0
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+label-connected = WIFI| %essid%
+label-disconnected = disconnected
+
+[module/checkupdates]
+type = custom/script
+label = UPD| %output%
+exec = checkupdates | wc -l
+interval = 500
+
 
 ; vim:ft=dosini
