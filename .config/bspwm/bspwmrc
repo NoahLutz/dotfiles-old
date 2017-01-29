@@ -16,7 +16,7 @@ bspc config borderless_monocle  true
 bspc config gapless_monocle     true
 bspc config focus_by_distance   true
 
-bspc monitor -d `echo -e '\uf1a0 \uf120 \uf121 \uf040 \uf025 \uf1f9'`
+bspc monitor -d 1 2 3 4 5 6
 
 bspc rule -a Google-chrome desktop=^1 state=floating private=on 
 bspc rule -a URxvt:urxvt state=floating
