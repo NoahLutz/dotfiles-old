@@ -8,7 +8,7 @@ alert = #6b4657
 highlight = #d0dad8
 
 [fonts]
-primary = -*-tewi-medium-*-*-*-12-*-*-*-*-*-*-*
+primary = "lucy tewi;0"
 
 [global/wm]
 margin-top = 1
@@ -19,7 +19,7 @@ monitor = ${env:MONITOR:eDP1}
 bottom = true
 width = 100%
 height = 7 
-offset-x = 0
+offset-x = 0 
 offset-y = 12 
 wm-restack = bspwm
 
@@ -45,6 +45,7 @@ foreground = ${colors.foreground}
 font-0 = ${fonts.primary}
 
 modules-center = date
+
 
 [bar/bat_bright_vol]
 monitor = ${env:MONITOR:eDP1}
@@ -73,8 +74,8 @@ offset-y = 12
 
 background = ${colors.background}
 foreground = ${colors.foreground}
-
 font-0 = ${fonts.primary}
+
 modules-center = network
 
 
@@ -102,22 +103,22 @@ enable-scroll = false
 
 format = <label-state>
 
-label-focused-foreground = ${colors.transparent}
+label-focused-foreground = ${colors.foreground}
 label-focused-background = ${colors.foreground}
 label-focused-underline= ${colors.transparent}
 label-focused-padding = 20
 
 label-occupied-padding = 20
-label-occupied-foreground = ${colors.transparent}
+label-occupied-foreground = ${colors.primary}
 label-occupied-background = ${colors.primary}
 label-occupied-underline = ${colors.transparent}
 
-label-urgent-foreground = ${colors.transparent}
+label-urgent-foreground = ${colors.alert}
 label-urgent-background = ${colors.alert}
 label-urgent-underline = ${colors.transparent}
 label-urgent-padding = 20
 
-label-empty-foreground = ${colors.transparent}
+label-empty-foreground = ${colors.secondary}
 label-empty-background = ${colors.secondary}
 label-empyty-underline = ${colors.transparent}
 label-empty-padding = 20
@@ -127,14 +128,6 @@ type = internal/xbacklight
 format = <label>
 label = BRT| %percentage%%
 card = intel_backlight
-
-[module/time]
-type = internal/date
-interval = 5
-time = %I:%M %p
-time-alt = %H:%M:%S
-format-prefix-foreground = ${colors.foreground}
-label = %time%
 
 [module/date]
 type=internal/date
@@ -162,31 +155,6 @@ label-full = BAT| %percentage%%
 poll-interval = 5
 format-charging = <label-charging>
 format-discharging = <label-discharging>
-
-[module/powermenu]
-type = custom/menu
-
-label-open =  power
-label-open-foreground = ${colors.secondary}
-label-close =  cancel
-label-close-foreground = ${colors.secondary}
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
-
-menu-0-0 = reboot
-menu-0-0-exec = menu-open-1
-menu-0-1 = power off
-menu-0-1-exec = menu-open-2
-
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
-
-menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
 
 [module/network]
 type=internal/network
