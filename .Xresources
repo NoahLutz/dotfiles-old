@@ -35,7 +35,7 @@ URxvt.scrollBar: false
 URxvt.internalBorder: 4
 URxvt*foreground: COLORFG
 URxvt*background: COLORBG
-URxvt*font: -*-tewi-medium-*-*-*-12-*-*-*-*-*-*-*
+URxvt*font: -*-tewi-medium-*-*-*-11-*-*-*-*-*-*-*
 URxvt.letterSpace: 1
 
 !Clickable Links
