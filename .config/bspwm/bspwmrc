@@ -47,3 +47,4 @@ bspc rule -a VirtualBox state=floating private=on desktop=^6
 bspc rule -a Vlc state=tiling private=on desktop=^5
 bspc rule -a sqlitebrowser private=on state=floating desktop=^4
 bspc rule -a Slack private=on state=floating desktop=^4
+bspc rule -a Firefox private=on state=floating desktop=^1
