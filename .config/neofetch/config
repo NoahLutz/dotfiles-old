@@ -61,11 +61,11 @@ kernel_shorthand="on"
 
 # Shorten the output of distro (tiny, on, off)
 # NOTE: This is only possible on Linux, macOS, and Solaris
-distro_shorthand="off"
+distro_shorthand="on"
 
 # Show 'x86_64' and 'x86' in 'Distro:' output.
 # --os_arch on, off
-os_arch="on"
+os_arch="off"
 
 
 # Uptime
@@ -83,7 +83,7 @@ shell_path="off"
 
 # Show $SHELL's version
 # --shell_version on, off
-shell_version="on"
+shell_version="off"
 
 
 # CPU
@@ -289,7 +289,7 @@ disk_display="off"
 
 # Image Source
 # --image wall, ascii, /path/to/img, /path/to/dir/, off
-image="$HOME/pictures/f_society2.png"
+image="$HOME/pictures/fsociety.png"
 
 # Thumbnail directory
 thumbnail_dir="$HOME/.cache/thumbnails/neofetch"
