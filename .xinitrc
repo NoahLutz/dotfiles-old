@@ -46,7 +46,7 @@ sxhkd &
 xbindkeys &
 
 #compton
-compton -b --backend glx&
+compton -bf --backend glx&
 
 #start bar
 #panel &
