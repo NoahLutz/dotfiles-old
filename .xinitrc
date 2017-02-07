@@ -46,7 +46,7 @@ sxhkd &
 xbindkeys &
 
 #compton
-compton -bf --backend glx&
+compton -bf --backend glx --vsync opengl-swc&
 
 #start bar
 #panel &
