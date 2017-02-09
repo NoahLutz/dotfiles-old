@@ -16,7 +16,7 @@ print_info() {
     info "Uptime" uptime
     info "Packages" packages
     info "Shell" shell
-    info "Resolution" resolution
+#    info "Resolution" resolution
     info "DE" de
     info "WM" wm
     info "WM Theme" wm_theme
@@ -24,8 +24,8 @@ print_info() {
     info "Icons" icons
     info "Terminal" term
     info "Terminal Font" term_font
-    info "CPU" cpu
-    info "GPU" gpu
+#    info "CPU" cpu
+#    info "GPU" gpu
     info "Memory" memory
 
     # info "CPU Usage" cpu_usage
@@ -81,7 +81,7 @@ distro_shorthand="off"
 # Example:
 # on:  'Arch Linux x86_64'
 # off: 'Arch Linux'
-os_arch="on"
+os_arch="off"
 
 
 # Uptime
@@ -679,7 +679,7 @@ scrot_cmd="auto"
 # Flag:    --scrot_dir
 #
 # Note: Neofetch won't create the directory if it doesn't exist.
-scrot_dir="$HOME/Pictures/"
+scrot_dir="$HOME/pictures/"
 
 # Screenshot Filename
 # What to name the screenshots
@@ -698,7 +698,7 @@ scrot_name="neofetch-$(date +%F-%I-%M-%S-${RANDOM}).png"
 #
 # NOTE: If you'd like another image host to be added to Neofetch.
 #       Open an issue on github.
-image_host="teknik"
+image_host="imgur"
 
 
 # Misc Options
