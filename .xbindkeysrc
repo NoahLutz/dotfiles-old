@@ -17,19 +17,19 @@
     XF86AudioMute
 
 #Rofi Keybinds
-"(rofi -show run)"
+"(rofi -show run -no-fixed-num-lines)"
     m:0x8 + c:65
     Alt + space
 
-"(rofi -show window)"
+"(rofi -show window -no-fixed-num-lines)"
     m:0x8 + c:23
     Alt + Tab
 
-"(rofi -show windowCD)"
+"(rofi -show windowCD -no-fixed-num-lines)"
     m:0x8 + c:49
     Alt + grave
 
-"(rofi -modi 'google:/home/noah/bin/google' -show google)"
+"(rofi -modi 'google:/home/noah/bin/google' -show google -no-fixed-num-lines)"
     m:0x9 + c:42
     Shift+Alt + g
 
