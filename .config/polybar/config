@@ -21,7 +21,7 @@ width = 100%
 height = 7 
 offset-x = 0 
 offset-y = 12 
-wm-restack = bspwm
+;wm-restack = bspwm
 
 background = ${colors.transparent}
 foreground = ${colors.transparent}
