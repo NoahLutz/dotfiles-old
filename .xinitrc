@@ -48,8 +48,8 @@ xbindkeys &
 #compton
 compton -bf --backend glx --vsync opengl-swc&
 
-#start bar
-#panel &
+#enable i3lock
+xss-lock -- /usr/bin/i3lock -i /home/noah/pictures/lockscreen.png -u -n &
 
 #start dunst
 dunst&
