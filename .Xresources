@@ -50,7 +50,7 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 
 
 !Rofi config
-rofi.color-window: COLORBG, COLORBORDER
+rofi.color-window: COLORBG, COLORFG
 rofi.color-normal: COLORBG, COLORFG, COLORBG, COLORFG, COLORBG
 rofi.color-urgent: COLORBG, COLORFG, COLORBG, COLORFG, COLORBG
 rofi.color-active: COLORBG, COLORFG, COLORBG, COLORFG, COLORBG
