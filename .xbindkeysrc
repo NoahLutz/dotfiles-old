@@ -17,15 +17,15 @@
     XF86AudioMute
 
 #Rofi Keybinds
-"(rofi -show run -no-fixed-num-lines)"
+"(rofi -modi run -show run -no-fixed-num-lines)"
     m:0x8 + c:65
     Alt + space
 
-"(rofi -show window -no-fixed-num-lines)"
+"(rofi -modi window -show window -no-fixed-num-lines)"
     m:0x8 + c:23
     Alt + Tab
 
-"(rofi -show windowCD -no-fixed-num-lines)"
+"(rofi -modi windowcd -show windowcd -no-fixed-num-lines)"
     m:0x8 + c:49
     Alt + grave
 
@@ -33,11 +33,16 @@
     m:0x9 + c:42
     Shift+Alt + g
 
-"(xbacklight -inc 10)"
+"(rofi -modi 'ssh' -show ssh -no-fixed-num-lines)"
+    m:0x9 + c:39
+    Shift+Alt + s
+
+
+"(xbacklight -inc 5)"
     m:0x0 + c:233
     XF86MonBrightnessUp
 
-"(xbacklight -dec 10)"
+"(xbacklight -dec 5)"
     m:0x0 + c:232
     XF86MonBrightnessDown
 
