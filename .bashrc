@@ -22,3 +22,5 @@ alias ls='ls -lah --color=auto'
 alias lsn='ls -lah --color=no'
 alias packer="packer --noedit "
 alias sleepoff="sudo xset -dpms;sudo xset s off"
+
+export QSYS_ROOTDIR="/home/noah/.cache/pacaur/quartus-lite/pkg/quartus-lite//opt/altera/quartus/sopc_builder/bin"
